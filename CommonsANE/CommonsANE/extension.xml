@@ -1,0 +1,16 @@
+<extension xmlns="http://ns.adobe.com/air/extension/16.0">
+	<id>com.apptem.CommonsANE</id>
+	<versionNumber>1</versionNumber>
+	<platforms>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libCommonsANE.a</nativeLibrary>
+				<initializer>CommonsANEExtInitializer</initializer>
+				<finalizer>CommonsANEExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default"> 
+			<applicationDeployment/> 
+		</platform>
+	</platforms>
+</extension>

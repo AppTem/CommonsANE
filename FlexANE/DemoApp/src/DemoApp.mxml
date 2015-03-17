@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:mx="library://ns.adobe.com/flex/spark"
+			   applicationDPI="320" initialize="init(event)">
+	<fx:Script>
+		<![CDATA[
+			import com.apptem.commonssdk.CommonsANE;
+			
+			import mx.events.FlexEvent;
+			
+			protected function OnClickTestButton(event:MouseEvent):void
+			{
+				var IDFA:String = CommonsANE.Instance.GetIDFA();
+				trace("IDFA=" + IDFA);
+				Message.text += "IDFA=" + IDFA + "\n";
+				
+				var OpenUUID:String = CommonsANE.Instance.GetOpenUUID();
+				trace("OpenUUID=" + OpenUUID);
+				Message.text += "OpenUUID=" + OpenUUID + "\n";
+			}
+			
+			protected function OnClickCleanButton(event:MouseEvent):void
+			{
+				Message.text = "";
+			}
+			
+			protected function init(event:FlexEvent):void
+			{
+				// 初始化CommonsANE接口定义
+				CommonsANE.Init();
+			}
+
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+	</fx:Declarations>
+	<mx:Button   id="TestButton"  x="0"   y="110" click="OnClickTestButton(event)"  label="TestButton" color="green"/>
+	<mx:Button   id="CleanButton" x="200" y="110" click="OnClickCleanButton(event)" label="Clean"      color="black"/>
+	<mx:TextArea id="Message"     x="10"  y="300" height="600" text=""/>
+</mx:Application>
