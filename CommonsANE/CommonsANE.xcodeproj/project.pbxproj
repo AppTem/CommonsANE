@@ -401,7 +401,7 @@
 				AIR_SDK_PATH = /Volumes/Data/Applications/SDK/FlexSDK;
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
-				NATIVEEXTENSION_SWC = /Volumes/Data/Project/AppTem/iOS/ANECommons/FlexANE/CommonsANE/bin/CommonsANE.swc;
+				NATIVEEXTENSION_SWC = /Volumes/Data/Project/AppTem/iOS/CommonsANE/FlexANE/CommonsANE/bin/CommonsANE.swc;
 				PRODUCT_NAME = CommonsANE;
 			};
 			name = Debug;
@@ -412,7 +412,7 @@
 				AIR_SDK_PATH = /Volumes/Data/Applications/SDK/FlexSDK;
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
-				NATIVEEXTENSION_SWC = /Volumes/Data/Project/AppTem/iOS/ANECommons/FlexANE/CommonsANE/bin/CommonsANE.swc;
+				NATIVEEXTENSION_SWC = /Volumes/Data/Project/AppTem/iOS/CommonsANE/FlexANE/CommonsANE/bin/CommonsANE.swc;
 				PRODUCT_NAME = CommonsANE;
 			};
 			name = Release;

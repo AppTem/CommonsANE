@@ -39,6 +39,7 @@ popd
 
 cp -f "$CONFIGURATION_BUILD_DIR"/"$TARGET_NAME" "$PROJECT_DIR"
 
+mkdir -p -v "$PROJECT_DIR"/../FlexANE/DemoApp/libs
 cp -f "$CONFIGURATION_BUILD_DIR"/"$TARGET_NAME" "$PROJECT_DIR"/../FlexANE/DemoApp/libs
 
 
